@@ -1,0 +1,39 @@
+{
+  "schema_version": "4.8.1",
+  "release": "DRY-R2026.08",
+  "sprint": "DRY-01",
+  "planned_scope": {
+    "total_tests": 160,
+    "manual_tests": 10,
+    "automation_tests": 150
+  },
+  "feature_readiness": {
+    "total_features": 10,
+    "ready_features": 9
+  },
+  "environment_readiness": {
+    "SIT": {
+      "status": "READY",
+      "build_version": "dry-4.7-baseline",
+      "remarks": "SIT is governed ready for the current dry run."
+    }
+  },
+  "defect_governance": {
+    "defects": [
+      {
+        "id": "DRY-DEF-001",
+        "title": "GitHub repository operation intermittently fails",
+        "severity": "HIGH",
+        "status": "OPEN",
+        "impact": "Regression risk remains for the affected repository operation; testing may continue while triage is in progress."
+      },
+      {
+        "id": "DRY-DEF-002",
+        "title": "Critical repository update path can corrupt governed test state",
+        "severity": "CRITICAL",
+        "status": "CLOSED",
+        "impact": "Critical defect fixed and regression-tested successfully; no longer an active release blocker."
+      }
+    ]
+  }
+}
