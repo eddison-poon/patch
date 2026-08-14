@@ -1,0 +1,21 @@
+{
+  "adapter_schema": "automation-execution-adapter/v1",
+  "execution_id": "DRY-EXE-20260813-A-002",
+  "test_definition_id": "MCP-GITHUB-A-002",
+  "environment": "SIT",
+  "execution_cycle": "DRY-R2026.08-SIT-D2AM",
+  "build_version": "dry-4.7-baseline",
+  "status": "FAILED",
+  "started_at": "2026-08-13T08:28:00+08:00",
+  "completed_at": "2026-08-13T08:30:00+08:00",
+  "executed_by": "dry-run-operator",
+  "source_system": "PLAYWRIGHT",
+  "defect_ids": [
+    "DRY-DEF-003"
+  ],
+  "evidence_ids": [],
+  "rerun_of_execution_id": null,
+  "ci_metadata": {
+    "run_id": "DRY-RUN-NO-CI"
+  }
+}
