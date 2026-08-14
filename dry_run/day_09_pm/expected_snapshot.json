@@ -1,0 +1,39 @@
+{
+  "day_09_pm_ppd_stability_contract": {
+    "snapshot": "2026-08-19T18:00:00+08:00",
+    "objective": "Confirm stable Pre-Production qualification after Day 9 AM remediation and prepare the Production Verification gate.",
+    "overall_health": "GREEN",
+    "new_ppd_executions": [
+      {
+        "scenario_id": "dry-jira-004",
+        "manual_test_id": "M-MCP-JIRA-004",
+        "status": "PASSED",
+        "execution_id": "DRY-EXE-20260819-PM-PPD-M-001"
+      },
+      {
+        "scenario_id": "dry-conf-004",
+        "manual_test_id": "M-MCP-CONF-004",
+        "status": "PASSED",
+        "execution_id": "DRY-EXE-20260819-PM-PPD-M-002"
+      }
+    ],
+    "pre_production": {
+      "readiness": "READY",
+      "qualification": "STABLE",
+      "expectation": "Additional clean PPD executions without regression."
+    },
+    "defect": {
+      "id": "DRY-DEF-003",
+      "status": "CLOSED",
+      "must_remain_closed": true
+    },
+    "preserve": {
+      "SIT": "unchanged",
+      "UAT": "READY / unchanged",
+      "FILESYSTEM_PPD_RECOVERY": "PASSED / preserved",
+      "PRODUCTION_VERIFICATION": "NOT_AVAILABLE / no PROD execution"
+    },
+    "aggregation_rule": "Governed latest-state aggregation is authoritative; do not force aggregate counts.",
+    "next_gate": "Day 10 AM may begin controlled Production Verification."
+  }
+}
