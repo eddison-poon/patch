@@ -2,7 +2,7 @@
   "execution_id": "DRY-EXE-20260817-PM-PPD-M-003",
   "test_definition_id": "DRY-FS-M-001",
   "test_type": "MANUAL",
-  "environment": "PPD",
+  "environment": "PRE_PRODUCTION",
   "execution_cycle": "DRY-R2026.08-PPD-D7PM",
   "build_version": "dry-4.7-baseline",
   "status": "PASSED",

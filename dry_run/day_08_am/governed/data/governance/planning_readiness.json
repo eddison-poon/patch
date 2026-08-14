@@ -22,11 +22,6 @@
       "build_version": "dry-4.7-baseline",
       "remarks": "UAT remediation completed; failed and blocked cases were successfully retested."
     },
-    "PPD": {
-      "status": "READY",
-      "build_version": "dry-4.7-baseline",
-      "remarks": "Pre-Production promotion approved; first controlled PPD validation is active."
-    },
     "PRE_PRODUCTION": {
       "status": "PARTIALLY_READY",
       "build_version": "dry-4.7-baseline",
