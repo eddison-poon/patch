@@ -1,0 +1,1503 @@
+{
+  "metadata": {
+    "release": "DRY-R2026.08",
+    "sprint": "DRY-01",
+    "build": "dry-4.7-baseline",
+    "generated_at": "2026-08-14T18:00:00+08:00"
+  },
+  "capability_groups": [
+    {
+      "id": "dry-mcp-marketplace",
+      "name": "MCP Marketplace \u2014 Operational Dry Run",
+      "default_expanded": true,
+      "capabilities": [
+        {
+          "id": "dry-jira-mcp",
+          "name": "Jira MCP",
+          "description": "Jira issue creation, search, update, and workflow capabilities.",
+          "environments": {
+            "DEV": {
+              "status": "Passed",
+              "score": 100,
+              "health": "green"
+            },
+            "SIT": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "UAT": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "PPD": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "PROD": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            }
+          },
+          "features": [
+            {
+              "id": "dry-create-jira-ticket",
+              "name": "Create Jira Ticket",
+              "scenarios": [
+                {
+                  "id": "dry-jira-001",
+                  "name": "Create Jira Ticket - dry run scenario 1",
+                  "jira_id": "DRY-001",
+                  "manual_test_id": "M-MCP-JIRA-001",
+                  "automation_test_id": "A-MCP-JIRA-001",
+                  "manual_status": "PASSED",
+                  "automation_status": "PASSED",
+                  "executions": [
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-001",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T14:07:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260814-AM-A-001",
+                      "status": "FAILED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-14T08:18:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260814-PM-A-001",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-14T17:20:00+08:00"
+                    }
+                  ],
+                  "test_definition_id": "A-MCP-JIRA-001",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-001",
+                  "latest_execution": {
+                    "execution_id": "DRY-EXE-20260814-PM-A-001",
+                    "status": "PASSED",
+                    "environment": "SIT",
+                    "build": "dry-4.7-baseline",
+                    "executed_at": "2026-08-14T17:20:00+08:00"
+                  },
+                  "execution_history": [
+                    {
+                      "execution_id": "DRY-EXE-20260814-PM-A-001",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-14T17:20:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260814-AM-A-001",
+                      "status": "FAILED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-14T08:18:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-001",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T14:07:00+08:00"
+                    }
+                  ]
+                },
+                {
+                  "id": "dry-jira-002",
+                  "name": "Create Jira Ticket - dry run scenario 2",
+                  "jira_id": "DRY-002",
+                  "manual_test_id": "M-MCP-JIRA-002",
+                  "automation_test_id": null,
+                  "manual_status": "PASSED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [
+                    {
+                      "execution_id": "DRY-EXE-20260814-PM-M-002",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-14T17:35:00+08:00"
+                    }
+                  ],
+                  "test_definition_id": "M-MCP-JIRA-002",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-002",
+                  "latest_execution": {
+                    "execution_id": "DRY-EXE-20260814-PM-M-002",
+                    "status": "PASSED",
+                    "environment": "SIT",
+                    "build": "dry-4.7-baseline",
+                    "executed_at": "2026-08-14T17:35:00+08:00"
+                  },
+                  "execution_history": [
+                    {
+                      "execution_id": "DRY-EXE-20260814-PM-M-002",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-14T17:35:00+08:00"
+                    }
+                  ]
+                }
+              ],
+              "score": 83.3,
+              "health": "green"
+            },
+            {
+              "id": "dry-search-jira-ticket",
+              "name": "Search Jira Ticket",
+              "scenarios": [
+                {
+                  "id": "dry-jira-003",
+                  "name": "Search Jira Ticket - dry run scenario 3",
+                  "jira_id": "DRY-003",
+                  "manual_test_id": "M-MCP-JIRA-003",
+                  "automation_test_id": "A-MCP-JIRA-003",
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "PASSED",
+                  "executions": [
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-002",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T14:14:00+08:00"
+                    }
+                  ],
+                  "test_definition_id": "A-MCP-JIRA-003",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-003",
+                  "latest_execution": {
+                    "execution_id": "DRY-EXE-20260812-PM-002",
+                    "status": "PASSED",
+                    "environment": "SIT",
+                    "build": "dry-4.7-baseline",
+                    "executed_at": "2026-08-12T14:14:00+08:00"
+                  },
+                  "execution_history": [
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-002",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T14:14:00+08:00"
+                    }
+                  ]
+                },
+                {
+                  "id": "dry-jira-004",
+                  "name": "Search Jira Ticket - dry run scenario 4",
+                  "jira_id": "DRY-004",
+                  "manual_test_id": "M-MCP-JIRA-004",
+                  "automation_test_id": null,
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [],
+                  "test_definition_id": "M-MCP-JIRA-004",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-004",
+                  "latest_execution": {
+                    "execution_id": "\u2014",
+                    "status": "NOT_EXECUTED",
+                    "environment": "\u2014",
+                    "build": "\u2014",
+                    "executed_at": null
+                  },
+                  "execution_history": []
+                }
+              ],
+              "score": 33.3,
+              "health": "red"
+            },
+            {
+              "id": "dry-update-jira-ticket",
+              "name": "Update Jira Ticket",
+              "scenarios": [
+                {
+                  "id": "dry-jira-005",
+                  "name": "Update Jira Ticket - dry run scenario 5",
+                  "jira_id": "DRY-005",
+                  "manual_test_id": "M-MCP-JIRA-005",
+                  "automation_test_id": "A-MCP-JIRA-005",
+                  "manual_status": "PASSED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-003",
+                      "status": "FAILED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T15:21:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260813-AM-001",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T08:05:00+08:00"
+                    }
+                  ],
+                  "test_definition_id": "A-MCP-JIRA-005",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-005",
+                  "latest_execution": {
+                    "execution_id": "DRY-EXE-20260813-AM-001",
+                    "status": "PASSED",
+                    "environment": "SIT",
+                    "build": "dry-4.7-baseline",
+                    "executed_at": "2026-08-13T08:05:00+08:00"
+                  },
+                  "execution_history": [
+                    {
+                      "execution_id": "DRY-EXE-20260813-AM-001",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T08:05:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-003",
+                      "status": "FAILED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T15:21:00+08:00"
+                    }
+                  ]
+                },
+                {
+                  "id": "dry-jira-006",
+                  "name": "Update Jira Ticket - dry run scenario 6",
+                  "jira_id": "DRY-006",
+                  "manual_test_id": "M-MCP-JIRA-006",
+                  "automation_test_id": null,
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [],
+                  "test_definition_id": "M-MCP-JIRA-006",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-006",
+                  "latest_execution": {
+                    "execution_id": "\u2014",
+                    "status": "NOT_EXECUTED",
+                    "environment": "\u2014",
+                    "build": "\u2014",
+                    "executed_at": null
+                  },
+                  "execution_history": []
+                }
+              ],
+              "score": 33.3,
+              "health": "red"
+            }
+          ],
+          "score": 50.0,
+          "health": "red",
+          "summary": {
+            "total_features": 3,
+            "ready": 1,
+            "failed": 0,
+            "blocked": 0,
+            "not_executed": 2
+          }
+        },
+        {
+          "id": "dry-confluence-mcp",
+          "name": "Confluence MCP",
+          "description": "Confluence page viewing and content-management capabilities.",
+          "environments": {
+            "DEV": {
+              "status": "Passed",
+              "score": 100,
+              "health": "green"
+            },
+            "SIT": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "UAT": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "PPD": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "PROD": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            }
+          },
+          "features": [
+            {
+              "id": "dry-view-confluence-page",
+              "name": "View Confluence Page",
+              "scenarios": [
+                {
+                  "id": "dry-conf-001",
+                  "name": "View Confluence Page - dry run scenario 1",
+                  "jira_id": "DRY-007",
+                  "manual_test_id": "M-MCP-CONF-001",
+                  "automation_test_id": "A-MCP-CONF-001",
+                  "manual_status": "PASSED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-004",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T15:28:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260814-AM-M-001",
+                      "status": "FAILED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-14T08:10:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260814-PM-M-001",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-14T17:10:00+08:00"
+                    }
+                  ],
+                  "test_definition_id": "A-MCP-CONF-001",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-007",
+                  "latest_execution": {
+                    "execution_id": "DRY-EXE-20260814-PM-M-001",
+                    "status": "PASSED",
+                    "environment": "SIT",
+                    "build": "dry-4.7-baseline",
+                    "executed_at": "2026-08-14T17:10:00+08:00"
+                  },
+                  "execution_history": [
+                    {
+                      "execution_id": "DRY-EXE-20260814-PM-M-001",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-14T17:10:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260814-AM-M-001",
+                      "status": "FAILED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-14T08:10:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-004",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T15:28:00+08:00"
+                    }
+                  ]
+                },
+                {
+                  "id": "dry-conf-002",
+                  "name": "View Confluence Page - dry run scenario 2",
+                  "jira_id": "DRY-008",
+                  "manual_test_id": "M-MCP-CONF-002",
+                  "automation_test_id": null,
+                  "manual_status": "PASSED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [
+                    {
+                      "execution_id": "DRY-EXE-20260813-PM-003",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T14:20:00+08:00"
+                    }
+                  ],
+                  "test_definition_id": "M-MCP-CONF-002",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-008",
+                  "latest_execution": {
+                    "execution_id": "DRY-EXE-20260813-PM-003",
+                    "status": "PASSED",
+                    "environment": "SIT",
+                    "build": "dry-4.7-baseline",
+                    "executed_at": "2026-08-13T14:20:00+08:00"
+                  },
+                  "execution_history": [
+                    {
+                      "execution_id": "DRY-EXE-20260813-PM-003",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T14:20:00+08:00"
+                    }
+                  ]
+                },
+                {
+                  "id": "dry-conf-003",
+                  "name": "View Confluence Page - dry run scenario 3",
+                  "jira_id": "DRY-009",
+                  "manual_test_id": "M-MCP-CONF-003",
+                  "automation_test_id": "A-MCP-CONF-003",
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "PASSED",
+                  "executions": [
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-005",
+                      "status": "BLOCKED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T15:35:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260813-AM-002",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T08:12:00+08:00"
+                    }
+                  ],
+                  "test_definition_id": "A-MCP-CONF-003",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-009",
+                  "latest_execution": {
+                    "execution_id": "DRY-EXE-20260813-AM-002",
+                    "status": "PASSED",
+                    "environment": "SIT",
+                    "build": "dry-4.7-baseline",
+                    "executed_at": "2026-08-13T08:12:00+08:00"
+                  },
+                  "execution_history": [
+                    {
+                      "execution_id": "DRY-EXE-20260813-AM-002",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T08:12:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-005",
+                      "status": "BLOCKED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T15:35:00+08:00"
+                    }
+                  ]
+                }
+              ],
+              "score": 66.7,
+              "health": "red"
+            },
+            {
+              "id": "dry-search-confluence",
+              "name": "Search Confluence Content",
+              "scenarios": [
+                {
+                  "id": "dry-conf-004",
+                  "name": "Search Confluence Content - dry run scenario 4",
+                  "jira_id": "DRY-010",
+                  "manual_test_id": "M-MCP-CONF-004",
+                  "automation_test_id": null,
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [],
+                  "test_definition_id": "M-MCP-CONF-004",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-010",
+                  "latest_execution": {
+                    "execution_id": "\u2014",
+                    "status": "NOT_EXECUTED",
+                    "environment": "\u2014",
+                    "build": "\u2014",
+                    "executed_at": null
+                  },
+                  "execution_history": []
+                },
+                {
+                  "id": "dry-conf-005",
+                  "name": "Search Confluence Content - dry run scenario 5",
+                  "jira_id": "DRY-011",
+                  "manual_test_id": "M-MCP-CONF-005",
+                  "automation_test_id": "A-MCP-CONF-005",
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [],
+                  "test_definition_id": "A-MCP-CONF-005",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-011",
+                  "latest_execution": {
+                    "execution_id": "\u2014",
+                    "status": "NOT_EXECUTED",
+                    "environment": "\u2014",
+                    "build": "\u2014",
+                    "executed_at": null
+                  },
+                  "execution_history": []
+                }
+              ],
+              "score": 0.0,
+              "health": "red"
+            }
+          ],
+          "score": 33.4,
+          "health": "red",
+          "summary": {
+            "total_features": 2,
+            "ready": 1,
+            "failed": 0,
+            "blocked": 0,
+            "not_executed": 1
+          }
+        },
+        {
+          "id": "dry-github-mcp",
+          "name": "GitHub MCP",
+          "description": "Repository, pull-request, and source-control capabilities.",
+          "environments": {
+            "DEV": {
+              "status": "Passed",
+              "score": 100,
+              "health": "green"
+            },
+            "SIT": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "UAT": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "PPD": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "PROD": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            }
+          },
+          "features": [
+            {
+              "id": "dry-repository-operations",
+              "name": "Repository Operations",
+              "scenarios": [
+                {
+                  "id": "dry-gh-001",
+                  "name": "Repository Operations - dry run scenario 1",
+                  "jira_id": "DRY-012",
+                  "manual_test_id": "M-MCP-GH-001",
+                  "automation_test_id": "A-MCP-GH-001",
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [],
+                  "test_definition_id": "A-MCP-GH-001",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-012",
+                  "latest_execution": {
+                    "execution_id": "\u2014",
+                    "status": "NOT_EXECUTED",
+                    "environment": "\u2014",
+                    "build": "\u2014",
+                    "executed_at": null
+                  },
+                  "execution_history": []
+                },
+                {
+                  "id": "dry-gh-002",
+                  "name": "Repository Operations - dry run scenario 2",
+                  "jira_id": "DRY-013",
+                  "manual_test_id": "M-MCP-GH-002",
+                  "automation_test_id": null,
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "PASSED",
+                  "executions": [
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-006",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T16:42:00+08:00"
+                    }
+                  ],
+                  "test_definition_id": "M-MCP-GH-002",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-013",
+                  "latest_execution": {
+                    "execution_id": "DRY-EXE-20260812-PM-006",
+                    "status": "PASSED",
+                    "environment": "SIT",
+                    "build": "dry-4.7-baseline",
+                    "executed_at": "2026-08-12T16:42:00+08:00"
+                  },
+                  "execution_history": [
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-006",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T16:42:00+08:00"
+                    }
+                  ]
+                },
+                {
+                  "id": "dry-gh-003",
+                  "name": "Repository Operations - dry run scenario 3",
+                  "jira_id": "DRY-014",
+                  "manual_test_id": "M-MCP-GH-003",
+                  "automation_test_id": "A-MCP-GH-003",
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "PASSED",
+                  "executions": [
+                    {
+                      "execution_id": "DRY-EXE-20260813-AM-004",
+                      "status": "FAILED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T08:28:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260813-PM-002",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T14:12:00+08:00"
+                    }
+                  ],
+                  "test_definition_id": "A-MCP-GH-003",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-014",
+                  "latest_execution": {
+                    "execution_id": "DRY-EXE-20260813-PM-002",
+                    "status": "PASSED",
+                    "environment": "SIT",
+                    "build": "dry-4.7-baseline",
+                    "executed_at": "2026-08-13T14:12:00+08:00"
+                  },
+                  "execution_history": [
+                    {
+                      "execution_id": "DRY-EXE-20260813-PM-002",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T14:12:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260813-AM-004",
+                      "status": "FAILED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T08:28:00+08:00"
+                    }
+                  ]
+                }
+              ],
+              "score": 44.4,
+              "health": "red"
+            },
+            {
+              "id": "dry-pull-request-operations",
+              "name": "Pull Request Operations",
+              "scenarios": [
+                {
+                  "id": "dry-gh-004",
+                  "name": "Pull Request Operations - dry run scenario 4",
+                  "jira_id": "DRY-015",
+                  "manual_test_id": "M-MCP-GH-004",
+                  "automation_test_id": null,
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "BLOCKED",
+                  "executions": [
+                    {
+                      "execution_id": "DRY-EXE-20260813-PM-004",
+                      "status": "BLOCKED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T14:28:00+08:00"
+                    }
+                  ],
+                  "test_definition_id": "M-MCP-GH-004",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-015",
+                  "latest_execution": {
+                    "execution_id": "DRY-EXE-20260813-PM-004",
+                    "status": "BLOCKED",
+                    "environment": "SIT",
+                    "build": "dry-4.7-baseline",
+                    "executed_at": "2026-08-13T14:28:00+08:00"
+                  },
+                  "execution_history": [
+                    {
+                      "execution_id": "DRY-EXE-20260813-PM-004",
+                      "status": "BLOCKED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T14:28:00+08:00"
+                    }
+                  ]
+                },
+                {
+                  "id": "dry-gh-005",
+                  "name": "Pull Request Operations - dry run scenario 5",
+                  "jira_id": "DRY-016",
+                  "manual_test_id": "M-MCP-GH-005",
+                  "automation_test_id": "A-MCP-GH-005",
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [],
+                  "test_definition_id": "A-MCP-GH-005",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-016",
+                  "latest_execution": {
+                    "execution_id": "\u2014",
+                    "status": "NOT_EXECUTED",
+                    "environment": "\u2014",
+                    "build": "\u2014",
+                    "executed_at": null
+                  },
+                  "execution_history": []
+                }
+              ],
+              "score": 16.7,
+              "health": "red"
+            }
+          ],
+          "score": 30.5,
+          "health": "red",
+          "summary": {
+            "total_features": 2,
+            "ready": 0,
+            "failed": 0,
+            "blocked": 1,
+            "not_executed": 1
+          }
+        },
+        {
+          "id": "dry-filesystem-mcp",
+          "name": "Filesystem MCP",
+          "description": "Controlled filesystem read, write, list, and metadata capabilities.",
+          "environments": {
+            "DEV": {
+              "status": "Passed",
+              "score": 100,
+              "health": "green"
+            },
+            "SIT": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "UAT": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "PPD": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "PROD": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            }
+          },
+          "features": [
+            {
+              "id": "dry-read-files",
+              "name": "Read Files",
+              "scenarios": [
+                {
+                  "id": "dry-fs-001",
+                  "name": "Read Files - dry run scenario 1",
+                  "jira_id": "DRY-017",
+                  "manual_test_id": "M-MCP-FS-001",
+                  "automation_test_id": "A-MCP-FS-001",
+                  "manual_status": "FAILED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-007",
+                      "status": "FAILED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T16:49:00+08:00"
+                    }
+                  ],
+                  "test_definition_id": "A-MCP-FS-001",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-017",
+                  "latest_execution": {
+                    "execution_id": "DRY-EXE-20260812-PM-007",
+                    "status": "FAILED",
+                    "environment": "SIT",
+                    "build": "dry-4.7-baseline",
+                    "executed_at": "2026-08-12T16:49:00+08:00"
+                  },
+                  "execution_history": [
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-007",
+                      "status": "FAILED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T16:49:00+08:00"
+                    }
+                  ]
+                },
+                {
+                  "id": "dry-fs-002",
+                  "name": "Read Files - dry run scenario 2",
+                  "jira_id": "DRY-018",
+                  "manual_test_id": "M-MCP-FS-002",
+                  "automation_test_id": null,
+                  "manual_status": "PASSED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [
+                    {
+                      "execution_id": "DRY-EXE-20260813-AM-003",
+                      "status": "BLOCKED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T08:20:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260813-PM-001",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T14:05:00+08:00"
+                    }
+                  ],
+                  "test_definition_id": "M-MCP-FS-002",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-018",
+                  "latest_execution": {
+                    "execution_id": "DRY-EXE-20260813-PM-001",
+                    "status": "PASSED",
+                    "environment": "SIT",
+                    "build": "dry-4.7-baseline",
+                    "executed_at": "2026-08-13T14:05:00+08:00"
+                  },
+                  "execution_history": [
+                    {
+                      "execution_id": "DRY-EXE-20260813-PM-001",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T14:05:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260813-AM-003",
+                      "status": "BLOCKED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-13T08:20:00+08:00"
+                    }
+                  ]
+                }
+              ],
+              "score": 33.3,
+              "health": "red"
+            },
+            {
+              "id": "dry-write-files",
+              "name": "Write Files",
+              "scenarios": [
+                {
+                  "id": "dry-fs-003",
+                  "name": "Write Files - dry run scenario 3",
+                  "jira_id": "DRY-019",
+                  "manual_test_id": "M-MCP-FS-003",
+                  "automation_test_id": "A-MCP-FS-003",
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [],
+                  "test_definition_id": "A-MCP-FS-003",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-019",
+                  "latest_execution": {
+                    "execution_id": "\u2014",
+                    "status": "NOT_EXECUTED",
+                    "environment": "\u2014",
+                    "build": "\u2014",
+                    "executed_at": null
+                  },
+                  "execution_history": []
+                },
+                {
+                  "id": "dry-fs-004",
+                  "name": "Write Files - dry run scenario 4",
+                  "jira_id": "DRY-020",
+                  "manual_test_id": "M-MCP-FS-004",
+                  "automation_test_id": null,
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [],
+                  "test_definition_id": "M-MCP-FS-004",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-020",
+                  "latest_execution": {
+                    "execution_id": "\u2014",
+                    "status": "NOT_EXECUTED",
+                    "environment": "\u2014",
+                    "build": "\u2014",
+                    "executed_at": null
+                  },
+                  "execution_history": []
+                }
+              ],
+              "score": 0.0,
+              "health": "red"
+            }
+          ],
+          "score": 16.6,
+          "health": "red",
+          "summary": {
+            "total_features": 2,
+            "ready": 0,
+            "failed": 1,
+            "blocked": 0,
+            "not_executed": 1
+          }
+        },
+        {
+          "id": "dry-ark-sandbox",
+          "name": "ARK Sandbox",
+          "description": "Sandbox execution and workspace lifecycle capabilities.",
+          "environments": {
+            "DEV": {
+              "status": "Blocked",
+              "score": 50,
+              "health": "red"
+            },
+            "SIT": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "UAT": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "PPD": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            },
+            "PROD": {
+              "status": "Not Executed",
+              "score": 0,
+              "health": "grey"
+            }
+          },
+          "features": [
+            {
+              "id": "dry-sandbox-session",
+              "name": "Sandbox Session",
+              "scenarios": [
+                {
+                  "id": "dry-ark-001",
+                  "name": "Sandbox Session - dry run scenario 1",
+                  "jira_id": "DRY-021",
+                  "manual_test_id": "M-MCP-ARK-001",
+                  "automation_test_id": null,
+                  "manual_status": "PASSED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-008",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T16:56:00+08:00"
+                    }
+                  ],
+                  "test_definition_id": "M-MCP-ARK-001",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-021",
+                  "latest_execution": {
+                    "execution_id": "DRY-EXE-20260812-PM-008",
+                    "status": "PASSED",
+                    "environment": "SIT",
+                    "build": "dry-4.7-baseline",
+                    "executed_at": "2026-08-12T16:56:00+08:00"
+                  },
+                  "execution_history": [
+                    {
+                      "execution_id": "DRY-EXE-20260812-PM-008",
+                      "status": "PASSED",
+                      "environment": "SIT",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-12T16:56:00+08:00"
+                    }
+                  ]
+                },
+                {
+                  "id": "dry-ark-002",
+                  "name": "Sandbox Session - dry run scenario 2",
+                  "jira_id": "DRY-022",
+                  "manual_test_id": "M-MCP-ARK-002",
+                  "automation_test_id": null,
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [],
+                  "test_definition_id": "M-MCP-ARK-002",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-022",
+                  "latest_execution": {
+                    "execution_id": "\u2014",
+                    "status": "NOT_EXECUTED",
+                    "environment": "\u2014",
+                    "build": "\u2014",
+                    "executed_at": null
+                  },
+                  "execution_history": []
+                },
+                {
+                  "id": "dry-ark-003",
+                  "name": "Sandbox Session - dry run scenario 3",
+                  "jira_id": "DRY-023",
+                  "manual_test_id": "M-MCP-ARK-003",
+                  "automation_test_id": null,
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [],
+                  "test_definition_id": "M-MCP-ARK-003",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-023",
+                  "latest_execution": {
+                    "execution_id": "\u2014",
+                    "status": "NOT_EXECUTED",
+                    "environment": "\u2014",
+                    "build": "\u2014",
+                    "executed_at": null
+                  },
+                  "execution_history": []
+                }
+              ],
+              "score": 22.2,
+              "health": "red"
+            },
+            {
+              "id": "dry-sandbox-execution",
+              "name": "Sandbox Execution",
+              "scenarios": [
+                {
+                  "id": "dry-ark-004",
+                  "name": "Sandbox Execution - dry run scenario 4",
+                  "jira_id": "DRY-024",
+                  "manual_test_id": "M-MCP-ARK-004",
+                  "automation_test_id": null,
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [],
+                  "test_definition_id": "M-MCP-ARK-004",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-024",
+                  "latest_execution": {
+                    "execution_id": "\u2014",
+                    "status": "NOT_EXECUTED",
+                    "environment": "\u2014",
+                    "build": "\u2014",
+                    "executed_at": null
+                  },
+                  "execution_history": []
+                },
+                {
+                  "id": "dry-ark-005",
+                  "name": "Sandbox Execution - dry run scenario 5",
+                  "jira_id": "DRY-025",
+                  "manual_test_id": null,
+                  "automation_test_id": null,
+                  "manual_status": "NOT_EXECUTED",
+                  "automation_status": "NOT_EXECUTED",
+                  "executions": [],
+                  "test_definition_id": "\u2014",
+                  "jira_url": "https://your-domain.atlassian.net/browse/DRY-025",
+                  "latest_execution": {
+                    "execution_id": "\u2014",
+                    "status": "NOT_EXECUTED",
+                    "environment": "\u2014",
+                    "build": "\u2014",
+                    "executed_at": null
+                  },
+                  "execution_history": []
+                }
+              ],
+              "score": 0.0,
+              "health": "red"
+            }
+          ],
+          "score": 11.1,
+          "health": "red",
+          "summary": {
+            "total_features": 2,
+            "ready": 0,
+            "failed": 0,
+            "blocked": 0,
+            "not_executed": 2
+          }
+        }
+      ],
+      "score": 28.3,
+      "health": "red"
+    }
+  ],
+  "health_rules": {
+    "green_min": 80,
+    "amber_min": 70
+  },
+  "kpis": {
+    "overall_score": 28,
+    "overall_health": "red",
+    "features_ready": 1,
+    "total_features": 11,
+    "manual_coverage": 32,
+    "automation_coverage": 16,
+    "executed_today": 5,
+    "passed_today": 3,
+    "failed_today": 2,
+    "critical_issues": 2
+  },
+  "day_05_pm_recovery_contract": {
+    "overall_health": "AMBER",
+    "active_defects_health": "AMBER",
+    "critical_defect": {
+      "id": "DRY-DEF-002",
+      "severity": "CRITICAL",
+      "status": "CLOSED"
+    },
+    "remaining_active_defect": {
+      "id": "DRY-DEF-001",
+      "severity": "HIGH",
+      "status": "OPEN"
+    },
+    "sit_readiness": "READY",
+    "manual_coverage_percent": 90.0,
+    "automation_coverage_percent": 90.0
+  },
+  "day_06_am_multi_environment_contract": {
+    "snapshot": "2026-08-16T09:00:00+08:00",
+    "overall_health": "AMBER",
+    "sit": {
+      "readiness": "READY",
+      "executed": 14,
+      "passed": 12,
+      "failed": 1,
+      "blocked": 1
+    },
+    "uat": {
+      "readiness": "READY",
+      "executed": 3,
+      "passed": 3,
+      "failed": 0,
+      "blocked": 0
+    },
+    "aggregate": {
+      "executed": 17,
+      "passed": 15,
+      "failed": 1,
+      "blocked": 1,
+      "not_executed": 143,
+      "execution_percentage": 10.6,
+      "pass_rate": 93.8
+    },
+    "remaining_active_defect": {
+      "id": "DRY-DEF-001",
+      "severity": "HIGH",
+      "status": "OPEN"
+    },
+    "capability_uat_health": "Jira, Confluence and Filesystem UAT should become Passed/100% in the legacy Capability Explorer."
+  },
+  "day_06_pm_environment_divergence_contract": {
+    "snapshot": "2026-08-16T18:00:00+08:00",
+    "overall_health": "AMBER",
+    "sit": {
+      "readiness": "READY",
+      "executed": 14,
+      "passed": 12,
+      "failed": 1,
+      "blocked": 1
+    },
+    "uat": {
+      "readiness": "PARTIALLY_READY",
+      "executed": 5,
+      "passed": 3,
+      "failed": 1,
+      "blocked": 1,
+      "pass_rate": 75.0
+    },
+    "aggregate": {
+      "executed": 19,
+      "passed": 15,
+      "failed": 2,
+      "blocked": 2,
+      "not_executed": 141,
+      "execution_percentage": 11.9,
+      "pass_rate": 88.2
+    },
+    "management": {
+      "active_defect": "DRY-DEF-001",
+      "defect_health": "AMBER",
+      "uat_readiness_signal": "PARTIALLY_READY"
+    },
+    "capability_expectation": {
+      "Jira MCP UAT": "FAILED",
+      "Confluence MCP UAT": "PASSED",
+      "Filesystem MCP UAT": "BLOCKED"
+    }
+  },
+  "day_07_am_recovery_contract": {
+    "snapshot": "2026-08-17T09:00:00+08:00",
+    "uat": {
+      "readiness": "READY",
+      "executed": 5,
+      "passed": 5,
+      "failed": 0,
+      "blocked": 0,
+      "pass_rate": 100.0
+    },
+    "aggregate": {
+      "executed": 19,
+      "passed": 17,
+      "failed": 1,
+      "blocked": 1,
+      "not_executed": 141,
+      "execution_percentage": 11.9,
+      "pass_rate": 94.4
+    },
+    "defect": {
+      "id": "DRY-DEF-001",
+      "status": "CLOSED",
+      "active_signal": false
+    },
+    "history_must_retain": [
+      "DRY-EXE-20260816-PM-UAT-M-001",
+      "DRY-EXE-20260816-PM-UAT-M-002"
+    ],
+    "capabilities": {
+      "Jira MCP UAT": "PASSED",
+      "Confluence MCP UAT": "PASSED",
+      "Filesystem MCP UAT": "PASSED"
+    }
+  },
+  "day_07_pm_ppd_promotion_contract": {
+    "snapshot": "2026-08-17T18:00:00+08:00",
+    "objective": "First controlled Pre-Production promotion and clean execution",
+    "ppd_latest_state": {
+      "readiness": "READY",
+      "executed": 3,
+      "passed": 3,
+      "failed": 0,
+      "blocked": 0,
+      "pass_rate": 100.0
+    },
+    "aggregate_latest_state": {
+      "executed": 22,
+      "passed": 20,
+      "failed": 1,
+      "blocked": 1,
+      "not_executed": 138,
+      "execution_percentage": 13.8,
+      "pass_rate": 95.2
+    },
+    "environment_preservation": {
+      "SIT": "preserve existing state",
+      "UAT": "READY / 100%",
+      "PROD": "NOT AVAILABLE"
+    },
+    "defect": {
+      "id": "DRY-DEF-001",
+      "status": "CLOSED",
+      "active_signal": false
+    },
+    "capability_expectation": {
+      "Jira MCP PPD": "PASSED",
+      "Confluence MCP PPD": "PASSED",
+      "Filesystem MCP PPD": "PASSED"
+    },
+    "overall_health_rule": "Engine-calculated from governed signals; do not force Green."
+  },
+  "day_08_am_ppd_qualification_contract": {
+    "snapshot": "2026-08-18T09:00:00+08:00",
+    "overall_health": "AMBER",
+    "features_ready": 9,
+    "manual_coverage_percent": 90.0,
+    "automation_coverage_percent": 90.0,
+    "aggregate_latest_state": {
+      "executed": 25,
+      "passed": 22,
+      "failed": 2,
+      "blocked": 1,
+      "not_executed": 135,
+      "execution_percentage": 15.6,
+      "pass_rate": 91.7
+    },
+    "pre_production": {
+      "readiness": "PARTIALLY_READY",
+      "executed": 6,
+      "passed": 5,
+      "failed": 1,
+      "blocked": 0,
+      "pass_rate": 83.3
+    },
+    "preserve": {
+      "SIT": "unchanged",
+      "UAT": "READY / 100%",
+      "PRODUCTION_VERIFICATION": "NOT_AVAILABLE"
+    },
+    "defect": {
+      "id": "DRY-DEF-003",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "health": "AMBER"
+    },
+    "capability_expectation": {
+      "Jira MCP PPD": "PASSED",
+      "Confluence MCP PPD": "PASSED",
+      "Filesystem MCP PPD": "FAILED"
+    }
+  },
+  "day_08_pm_continued_ppd_contract": {
+    "snapshot": "2026-08-18T18:00:00+08:00",
+    "overall_health": "AMBER",
+    "aggregate_latest_state": {
+      "executed": 27,
+      "passed": 24,
+      "failed": 2,
+      "blocked": 1,
+      "not_executed": 133,
+      "execution_percentage": 16.9,
+      "pass_rate": 92.3
+    },
+    "pre_production": {
+      "readiness": "PARTIALLY_READY",
+      "executed": 8,
+      "passed": 7,
+      "failed": 1,
+      "blocked": 0,
+      "pass_rate": 87.5
+    },
+    "defect": {
+      "id": "DRY-DEF-003",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "health": "AMBER"
+    },
+    "preserve": {
+      "SIT": "unchanged",
+      "UAT": "READY / 100%",
+      "PRODUCTION_VERIFICATION": "NOT_AVAILABLE"
+    },
+    "capability_expectation": {
+      "Filesystem MCP PPD": "FAILED",
+      "Jira MCP PPD": "PASSED",
+      "Confluence MCP PPD": "PASSED"
+    },
+    "acceptance_rule": "Execution progress may improve, but Overall Health must remain Amber while DRY-DEF-003 is active and PPD remains Partially Ready."
+  },
+  "day_09_am_ppd_recovery_contract": {
+    "snapshot": "2026-08-19T09:00:00+08:00",
+    "overall_health": "GREEN",
+    "pre_production": {
+      "readiness": "READY",
+      "targeted_retest": "PASSED"
+    },
+    "defect": {
+      "id": "DRY-DEF-003",
+      "severity": "HIGH",
+      "status": "CLOSED"
+    },
+    "capability_expectation": {
+      "Filesystem MCP PPD": "PASSED"
+    },
+    "history_rule": "Day 8 AM failed PPD execution remains in history; Day 9 AM successful retest is the latest execution.",
+    "preserve": {
+      "SIT": "unchanged",
+      "UAT": "unchanged",
+      "PRODUCTION_VERIFICATION": "NOT_AVAILABLE"
+    },
+    "aggregation_rule": "Governed latest-state aggregation is authoritative; do not force predicted aggregate counts."
+  },
+  "day_09_pm_patch_01_contract": {
+    "overall_health": "GREEN",
+    "must_preserve_manual_definitions": 9,
+    "must_preserve_automation_definitions": 135,
+    "new_ppd_executions": 2,
+    "DRY-DEF-003": "CLOSED",
+    "production_verification": "NOT_AVAILABLE"
+  },
+  "day_10_pm_prod_blocker_contract": {
+    "snapshot": "2026-08-20T18:00:00+08:00",
+    "objective": "Detect a controlled Production Verification access blocker after a clean Day 10 AM smoke run.",
+    "overall_health": "AMBER",
+    "production_verification": {
+      "readiness": "PARTIALLY_READY",
+      "new_execution_status": "BLOCKED",
+      "previous_am_passes_must_remain": 3
+    },
+    "defect": {
+      "id": "DRY-DEF-004",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "health": "AMBER"
+    },
+    "preserve": {
+      "SIT": "unchanged",
+      "UAT": "unchanged",
+      "PRE_PRODUCTION": "unchanged",
+      "DAY_10_AM_PROD_PASSES": "preserved"
+    },
+    "capability_expectation": {
+      "Jira MCP PROD": "BLOCKED"
+    },
+    "aggregation_rule": "Governed latest-state aggregation is authoritative."
+  },
+  "day_12_am_prod_regression_contract": {
+    "snapshot": "2026-08-22T09:00:00+08:00",
+    "objective": "Detect a true failed Production Verification regression after the stable Day 11 PM state.",
+    "overall_health": "AMBER",
+    "production_verification": {
+      "readiness": "PARTIALLY_READY",
+      "latest_regression_status": "FAILED",
+      "historical_pass_must_remain": true
+    },
+    "defect": {
+      "id": "DRY-DEF-005",
+      "severity": "HIGH",
+      "status": "OPEN",
+      "health": "AMBER"
+    },
+    "capability_expectation": {
+      "Filesystem MCP PROD": "FAILED"
+    },
+    "preserve": {
+      "SIT": "unchanged",
+      "UAT": "unchanged",
+      "PRE_PRODUCTION": "unchanged",
+      "DAY_11_PM_PROD_HISTORY": "preserved"
+    },
+    "aggregation_rule": "Governed latest-state aggregation is authoritative; do not force predicted counts."
+  },
+  "day_12_pm_prod_regression_recovery_contract": {
+    "snapshot": "2026-08-22T18:00:00+08:00",
+    "objective": "Recover from DRY-DEF-005 through targeted PROD retest while preserving the Day 12 AM failed execution in history.",
+    "overall_health": "GREEN",
+    "production_verification": {
+      "readiness": "READY",
+      "latest_retest_status": "PASSED",
+      "historical_failure_must_remain": true
+    },
+    "defect": {
+      "id": "DRY-DEF-005",
+      "severity": "HIGH",
+      "status": "CLOSED"
+    },
+    "capability_expectation": {
+      "Filesystem MCP PROD": "PASSED"
+    },
+    "preserve": {
+      "SIT": "unchanged",
+      "UAT": "unchanged",
+      "PRE_PRODUCTION": "unchanged",
+      "DAY_12_AM_PROD_FAILURE": "historical"
+    },
+    "aggregation_rule": "Governed latest-state aggregation is authoritative."
+  }
+}
