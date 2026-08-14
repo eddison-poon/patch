@@ -1,0 +1,18 @@
+{
+  "execution_id": "DRY-EXE-20260823-PM-PROD-M-001",
+  "test_definition_id": "DRY-CONF-M-002",
+  "test_type": "MANUAL",
+  "environment": "PRODUCTION_VERIFICATION",
+  "execution_cycle": "DRY-R2026.08-PROD-D13PM",
+  "build_version": "dry-4.7-baseline",
+  "status": "PASSED",
+  "started_at": "2026-08-23T16:17:00+08:00",
+  "completed_at": "2026-08-23T16:22:00+08:00",
+  "executed_by": "dry-run-prod-verifier",
+  "source_system": "MANUAL_ENTRY",
+  "defect_ids": [
+    "DRY-DEF-006"
+  ],
+  "evidence_ids": [],
+  "remarks": "Day 13 PM latest-state recovery test: targeted Confluence PROD retest passed after remediation."
+}
