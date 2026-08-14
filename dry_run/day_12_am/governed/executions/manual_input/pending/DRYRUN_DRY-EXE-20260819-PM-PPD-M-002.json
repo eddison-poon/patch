@@ -1,0 +1,16 @@
+{
+  "execution_id": "DRY-EXE-20260819-PM-PPD-M-002",
+  "test_definition_id": "DRY-CONF-M-002",
+  "test_type": "MANUAL",
+  "environment": "PRE_PRODUCTION",
+  "execution_cycle": "DRY-R2026.08-PPD-D9PM",
+  "build_version": "dry-4.7-baseline",
+  "status": "PASSED",
+  "started_at": "2026-08-19T16:27:00+08:00",
+  "completed_at": "2026-08-19T16:31:00+08:00",
+  "executed_by": "dry-run-ppd-tester",
+  "source_system": "MANUAL_ENTRY",
+  "defect_ids": [],
+  "evidence_ids": [],
+  "remarks": "Day 9 PM stable PPD qualification."
+}
