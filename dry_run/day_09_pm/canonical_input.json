@@ -8,7 +8,7 @@
   "capability_groups": [
     {
       "id": "dry-mcp-marketplace",
-      "name": "MCP Marketplace — Operational Dry Run",
+      "name": "MCP Marketplace \u2014 Operational Dry Run",
       "default_expanded": true,
       "capabilities": [
         {
@@ -149,7 +149,7 @@
                   "jira_id": "DRY-004",
                   "manual_test_id": "M-MCP-JIRA-004",
                   "automation_test_id": null,
-                  "manual_status": "PASSED",
+                  "manual_status": "NOT_EXECUTED",
                   "automation_status": "NOT_EXECUTED",
                   "executions": [
                     {
@@ -297,6 +297,13 @@
                       "environment": "PPD",
                       "build": "dry-4.7-baseline",
                       "executed_at": "2026-08-18T08:26:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260819-PM-PPD-M-002",
+                      "status": "PASSED",
+                      "environment": "PPD",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-19T16:31:00+08:00"
                     }
                   ]
                 },
@@ -337,17 +344,9 @@
                   "jira_id": "DRY-010",
                   "manual_test_id": "M-MCP-CONF-004",
                   "automation_test_id": null,
-                  "manual_status": "PASSED",
+                  "manual_status": "NOT_EXECUTED",
                   "automation_status": "NOT_EXECUTED",
-                  "executions": [
-                    {
-                      "execution_id": "DRY-EXE-20260819-PM-PPD-M-002",
-                      "status": "PASSED",
-                      "environment": "PPD",
-                      "build": "dry-4.7-baseline",
-                      "executed_at": "2026-08-19T16:31:00+08:00"
-                    }
-                  ]
+                  "executions": []
                 },
                 {
                   "id": "dry-conf-005",

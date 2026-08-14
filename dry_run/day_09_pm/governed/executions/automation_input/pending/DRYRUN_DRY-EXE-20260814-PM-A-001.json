@@ -1,0 +1,19 @@
+{
+  "execution_id": "DRY-EXE-20260814-PM-A-001",
+  "test_definition_id": "MCP-JIRA-A-001",
+  "environment": "SIT",
+  "execution_cycle": "DRY-R2026.08-SIT-D3PM",
+  "build_version": "dry-4.7-baseline",
+  "status": "PASSED",
+  "started_at": "2026-08-14T17:18:00+08:00",
+  "completed_at": "2026-08-14T17:20:00+08:00",
+  "executed_by": "dry-run-operator",
+  "source_system": "PLAYWRIGHT",
+  "external_reference": "DRY-D3PM-RECOVERY",
+  "defect_ids": [],
+  "evidence_ids": [],
+  "remarks": "Day 3 PM recovery rerun after Day 3 AM regression.",
+  "rerun_of_execution_id": "DRY-EXE-20260814-AM-A-001",
+  "adapter_schema": "automation-execution-adapter/v1",
+  "ci_metadata": {"run_id": "DRY-RUN-NO-CI"}
+}

@@ -1,0 +1,17 @@
+{
+  "execution_id": "DRY-EXE-20260814-PM-M-001",
+  "test_definition_id": "DRY-CONF-M-001",
+  "test_type": "MANUAL",
+  "environment": "SIT",
+  "execution_cycle": "DRY-R2026.08-SIT-D3PM",
+  "build_version": "dry-4.7-baseline",
+  "status": "PASSED",
+  "started_at": "2026-08-14T17:08:00+08:00",
+  "completed_at": "2026-08-14T17:10:00+08:00",
+  "executed_by": "dry-run-tester",
+  "source_system": "MANUAL_ENTRY",
+  "defect_ids": [],
+  "evidence_ids": [],
+  "remarks": "Day 3 PM recovery rerun after Day 3 AM regression.",
+  "rerun_of_execution_id": "DRY-EXE-20260814-AM-M-001"
+}
