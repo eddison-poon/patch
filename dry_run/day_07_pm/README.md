@@ -17,3 +17,7 @@ Validate the release lifecycle moving from SIT and recovered UAT into the first 
 - Overall Health is engine-calculated; it is not forced Green.
 
 No dashboard engine or layout changes.
+
+## Patch 01 note
+The governed execution/environment schema uses `PRE_PRODUCTION`.
+`PPD` remains valid only in the legacy Capability Explorer canonical input.
