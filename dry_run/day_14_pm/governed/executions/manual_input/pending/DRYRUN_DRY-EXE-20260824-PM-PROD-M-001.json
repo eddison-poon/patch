@@ -1,0 +1,16 @@
+{
+  "execution_id": "DRY-EXE-20260824-PM-PROD-M-001",
+  "test_definition_id": "DRY-FS-M-002",
+  "test_type": "MANUAL",
+  "environment": "PRODUCTION_VERIFICATION",
+  "execution_cycle": "DRY-R2026.08-PROD-D14PM",
+  "build_version": "dry-4.7-baseline",
+  "status": "PASSED",
+  "started_at": "2026-08-24T17:37:00+08:00",
+  "completed_at": "2026-08-24T17:42:00+08:00",
+  "executed_by": "dry-run-prod-verifier",
+  "source_system": "MANUAL_ENTRY",
+  "defect_ids": [],
+  "evidence_ids": [],
+  "remarks": "Day 14 PM final dry-run acceptance: closing Production Verification execution passed; no active defect or readiness exception remains."
+}
