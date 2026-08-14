@@ -1,0 +1,16 @@
+{
+  "execution_id": "DRY-EXE-20260818-AM-PPD-M-002",
+  "test_definition_id": "DRY-CONF-M-002",
+  "test_type": "MANUAL",
+  "environment": "PRE_PRODUCTION",
+  "execution_cycle": "DRY-R2026.08-PPD-D8AM",
+  "build_version": "dry-4.7-baseline",
+  "status": "PASSED",
+  "started_at": "2026-08-18T08:22:00+08:00",
+  "completed_at": "2026-08-18T08:26:00+08:00",
+  "executed_by": "dry-run-ppd-tester",
+  "source_system": "MANUAL_ENTRY",
+  "defect_ids": [],
+  "evidence_ids": [],
+  "remarks": "Day 8 AM expanded Pre-Production Confluence qualification passed."
+}
