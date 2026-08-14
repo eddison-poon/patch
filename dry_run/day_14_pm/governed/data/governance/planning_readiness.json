@@ -30,7 +30,7 @@
     "PRODUCTION_VERIFICATION": {
       "status": "READY",
       "build_version": "dry-4.7-baseline",
-      "remarks": "Final dry-run acceptance completed successfully; closing Production Verification execution passed with no active defect or readiness exception."
+      "remarks": "Final dry-run acceptance completed successfully; final Jira Production Verification check passed with no active defects."
     }
   },
   "defect_governance": {

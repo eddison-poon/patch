@@ -3,7 +3,7 @@
     "release": "DRY-R2026.08",
     "sprint": "DRY-01",
     "build": "dry-4.7-baseline",
-    "generated_at": "2026-08-24T18:00:00+08:00"
+    "generated_at": "2026-08-14T18:00:00+08:00"
   },
   "capability_groups": [
     {
@@ -1582,6 +1582,8 @@
     "aggregation_rule": "Governed latest-state output is authoritative."
   },
   "day_14_pm_final_acceptance_contract": {
+    "snapshot": "2026-08-24T18:00:00+08:00",
+    "objective": "Close the 14-day operational dry run with one genuinely new healthy Production Verification execution.",
     "overall_health": "GREEN",
     "features_ready": 9,
     "total_features": 10,
@@ -1594,7 +1596,7 @@
       "failed": 1,
       "blocked": 1,
       "not_executed": 126,
-      "completion_pct": 21.3,
+      "completion_pct": 21.2,
       "pass_rate_pct": 97.0
     },
     "manual": {
@@ -1620,6 +1622,7 @@
       "readiness": "READY"
     },
     "active_management_exceptions": 0,
+    "defect_governance": "DRY-DEF-001 through DRY-DEF-006 remain CLOSED",
     "closure": "ACCEPTED_IF_ALL_CHECKS_PASS"
   }
 }

@@ -1,27 +1,23 @@
-# Day 14 PM — Final Dry-Run Acceptance / Closure Cut
+# Day 14 PM Patch 01 — Corrected Final Dry-Run Acceptance
 
-Objective: close the 14-day operational dry run with one final healthy Production Verification execution and prove cumulative state remains stable.
+Root cause of the original Day 14 PM discrepancy:
+- the original package added another PROD execution for DRY-FS-M-002;
+- DRY-FS-M-002 was already represented in Production Verification;
+- therefore the engine correctly retained unique executed scope at 33.
 
-This cumulative cut:
-- preserves all Day 14 AM governed inputs and complete execution history;
-- introduces no new defect and keeps DRY-DEF-001 through DRY-DEF-006 CLOSED;
-- adds one final PASSED Production Verification execution for DRY-FS-M-002;
-- keeps Production Verification READY;
-- expects Overall Health to remain GREEN;
-- preserves all historical PASS / FAIL / BLOCKED / recovery evidence;
-- expects cumulative execution to advance by exactly one test;
-- makes no dashboard engine or layout changes.
+This corrected cumulative cut uses DRY-JIRA-M-003, which has no prior Production Verification execution.
 
-Final acceptance checks:
-1. Overall Health remains GREEN.
-2. Executed increases from 33 to 34.
-3. Passed increases from 31 to 32.
-4. Failed remains 1 and Blocked remains 1.
-5. Not Executed decreases from 127 to 126.
-6. Execution Progress becomes 21.3% (34 / 160).
-7. Pass Rate becomes 97.0% (32 / 33 completed Passed/Failed states).
-8. Production Verification shows 7 executed / 7 passed / 100% pass rate / Ready.
-9. No Amber / Red management exception is active.
-10. Historical failures, blockers and remediation executions remain available.
+Expected final closure state:
+- Overall Health: GREEN
+- Executed: 34
+- Passed / Failed / Blocked: 32 / 1 / 1
+- Not Executed: 126
+- Execution Progress: 21.2%
+- Pass Rate: 97.0%
+- Manual: 29 executed / 28 passed / 1 failed / 0 blocked
+- Production Verification: 7 executed / 7 passed / 100% / READY
+- No active Amber/Red exceptions
+- DRY-DEF-001 through DRY-DEF-006 remain CLOSED
+- all previous execution, failure, blocker and remediation history remains preserved
 
-If these checks pass, the 14-day / 28-cut operational dry run is accepted for closure and the repository can move to post-dry-run hardening/final-baseline work.
+No dashboard engine or layout changes.

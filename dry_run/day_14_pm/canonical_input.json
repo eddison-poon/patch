@@ -20,7 +20,7 @@
             "SIT": "NOT_EXECUTED",
             "UAT": "PASSED",
             "PPD": "PASSED",
-            "PROD": "BLOCKED"
+            "PROD": "PASSED"
           },
           "features": [
             {
@@ -145,7 +145,7 @@
                   "jira_id": "DRY-003",
                   "manual_test_id": "M-MCP-JIRA-003",
                   "automation_test_id": "A-MCP-JIRA-003",
-                  "manual_status": "NOT_EXECUTED",
+                  "manual_status": "PASSED",
                   "automation_status": "PASSED",
                   "executions": [
                     {
@@ -161,6 +161,13 @@
                       "environment": "PPD",
                       "build": "dry-4.7-baseline",
                       "executed_at": "2026-08-18T17:14:00+08:00"
+                    },
+                    {
+                      "execution_id": "DRY-EXE-20260824-PM-PROD-M-001",
+                      "status": "PASSED",
+                      "environment": "PROD",
+                      "build": "dry-4.7-baseline",
+                      "executed_at": "2026-08-24T17:19:00+08:00"
                     }
                   ]
                 },
@@ -644,13 +651,6 @@
                       "environment": "PROD",
                       "build": "dry-4.7-baseline",
                       "executed_at": "2026-08-22T16:23:00+08:00"
-                    },
-                    {
-                      "execution_id": "DRY-EXE-20260824-PM-PROD-M-001",
-                      "status": "PASSED",
-                      "environment": "PROD",
-                      "build": "dry-4.7-baseline",
-                      "executed_at": "2026-08-24T17:42:00+08:00"
                     }
                   ]
                 }
