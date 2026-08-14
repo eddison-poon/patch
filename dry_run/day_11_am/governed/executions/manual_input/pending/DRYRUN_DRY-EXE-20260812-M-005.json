@@ -1,0 +1,16 @@
+{
+  "execution_id": "DRY-EXE-20260812-M-005",
+  "test_definition_id": "DRY-ARK-M-001",
+  "test_type": "MANUAL",
+  "environment": "SIT",
+  "execution_cycle": "DRY-R2026.08-SIT-D1PM",
+  "build_version": "dry-4.7-baseline",
+  "status": "PASSED",
+  "started_at": "2026-08-12T17:25:00+08:00",
+  "completed_at": "2026-08-12T17:27:00+08:00",
+  "executed_by": "dry-run-tester",
+  "source_system": "MANUAL_ENTRY",
+  "defect_ids": [],
+  "evidence_ids": [],
+  "rerun_of_execution_id": null
+}

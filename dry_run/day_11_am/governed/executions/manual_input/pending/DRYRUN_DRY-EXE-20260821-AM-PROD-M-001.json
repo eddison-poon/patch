@@ -1,0 +1,18 @@
+{
+  "execution_id": "DRY-EXE-20260821-AM-PROD-M-001",
+  "test_definition_id": "DRY-JIRA-M-002",
+  "test_type": "MANUAL",
+  "environment": "PRODUCTION_VERIFICATION",
+  "execution_cycle": "DRY-R2026.08-PROD-D11AM",
+  "build_version": "dry-4.7-baseline",
+  "status": "PASSED",
+  "started_at": "2026-08-21T08:18:00+08:00",
+  "completed_at": "2026-08-21T08:22:00+08:00",
+  "executed_by": "dry-run-prod-verifier",
+  "source_system": "MANUAL_ENTRY",
+  "defect_ids": [
+    "DRY-DEF-004"
+  ],
+  "evidence_ids": [],
+  "remarks": "Production Verification retest passed after the Jira service credential was restored."
+}
